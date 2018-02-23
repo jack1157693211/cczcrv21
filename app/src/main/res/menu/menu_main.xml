@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cczcrv.jack.cczcrv.MainActivity">
+    <item
+        android:id="@+id/head_pic"
+        android:orderInCategory="70"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/head_pic"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="详情"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings1"
+        android:orderInCategory="110"
+        android:title="详情点评"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings2"
+        android:orderInCategory="111"
+        android:title="线路日历"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings3"
+        android:orderInCategory="112"
+        android:title="房车列表"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings4"
+        android:orderInCategory="113"
+        android:title="选时间车"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/tab_test_settings"
+        android:orderInCategory="120"
+        android:title="测试选项卡"
+        app:showAsAction="never" />
+</menu>

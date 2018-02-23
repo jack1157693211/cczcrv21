@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_more_info_calendar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cczcrv.jack.cczcrv.LineCalendar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cczcrv.jack.cczcrv.View.CommonCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="470dp"></com.cczcrv.jack.cczcrv.View.CommonCalendarView>
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/calendarView"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            style="@style/Text_12dp_464646"
+            android:text="选择套餐" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/package_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView24"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/timeNextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/package_recyclerView"
+            android:textColor="#ffffff"
+            android:background="#FFB366"
+            android:layout_marginEnd="0dp"
+            android:text="下一步" />
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    tools:context="com.cczcrv.jack.cczcrv.Review">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/review_constraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="游客点评"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="4.8分"
+            android:textColor="#FFB366"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/star_imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView32"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/star2" />
+
+        <ImageView
+            android:id="@+id/star_imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/star_imageView1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/star1" />
+
+        <ImageView
+            android:id="@+id/star_imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/star_imageView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/star1" />
+
+        <ImageView
+            android:id="@+id/star_imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/star_imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/star1" />
+
+        <ImageView
+            android:id="@+id/star_imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/star_imageView4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/star1" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:background="#ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_constraintLayout1">
+
+        <Button
+            android:id="@+id/button"
+            style="@style/MyButtonStyle_40x22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/button_background_orange"
+            android:text="全部"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/MyButtonStyle_40x22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_background_white"
+            android:text="满意"
+            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintTop_toTopOf="@+id/button"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/proDetailsNext"
+            style="@style/MyButtonStyle_40x22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_background_white"
+            android:text="一般"
+            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintTop_toTopOf="@+id/button"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/MyButtonStyle_40x22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_background_white"
+            android:text="不满意"
+            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintStart_toEndOf="@+id/proDetailsNext"
+            app:layout_constraintTop_toTopOf="@+id/button"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/MyButtonStyle_40x22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_background_white"
+            android:text="有图"
+            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintStart_toEndOf="@+id/button4"
+            app:layout_constraintTop_toTopOf="@+id/button"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/bg"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </FrameLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

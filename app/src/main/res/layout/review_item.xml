@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/head_pic"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/head_pic" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="寂静的夜"
+        android:textColor="#666666"
+        app:layout_constraintBottom_toBottomOf="@+id/head_pic"
+        app:layout_constraintStart_toEndOf="@+id/head_pic"
+        app:layout_constraintTop_toTopOf="@+id/head_pic" />
+
+    <ImageView
+        android:id="@+id/score_img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toTopOf="@+id/name"
+        app:srcCompat="@mipmap/star1" />
+
+    <ImageView
+        android:id="@+id/score_img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/score_img1"
+        app:layout_constraintStart_toEndOf="@+id/score_img1"
+        app:layout_constraintTop_toTopOf="@+id/score_img1"
+        app:srcCompat="@mipmap/star1" />
+
+    <ImageView
+        android:id="@+id/score_img3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/score_img2"
+        app:layout_constraintStart_toEndOf="@+id/score_img2"
+        app:layout_constraintTop_toTopOf="@+id/score_img2"
+        app:srcCompat="@mipmap/star1" />
+
+    <ImageView
+        android:id="@+id/score_img4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/score_img3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/score_img3"
+        app:layout_constraintTop_toTopOf="@+id/score_img3"
+        app:srcCompat="@mipmap/star1" />
+
+    <ImageView
+        android:id="@+id/score_img5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/score_img4"
+        app:layout_constraintStart_toEndOf="@+id/score_img4"
+        app:layout_constraintTop_toTopOf="@+id/score_img4"
+        app:srcCompat="@mipmap/star2" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="2017-12-25"
+        android:textColor="#B4B4B4"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/head_pic"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="早起后驱车前往泸沽湖环湖游览，醉倒在美妙绝伦的湖光山色之间。生活着国内外罕见的延续着母系氏族特点的摩梭人，为这片古老的土地涂上一了一层神秘而美丽的色彩"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head_pic" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content"
+        app:srcCompat="@mipmap/review_ioc1" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:srcCompat="@mipmap/review_ioc2" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:srcCompat="@mipmap/review_ioc3" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/imageView12"
+        app:srcCompat="@mipmap/review_ioc4" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/pic_count" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="共8张"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+</android.support.constraint.ConstraintLayout>
